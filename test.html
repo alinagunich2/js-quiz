@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/test.css">
+    <title>Quiz</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo"><img src="img/Logo.png" alt="logo"></div>
+        </div>
+    </header>
+
+    <section class="test">
+        <div class="container">
+            <div class="test-pre-title">Тест №1. “JavaScript: Начальный уровень”</div>
+            <div class="test-progress-bar"></div>
+            <div class="test-question">
+                <div class="test-question-title">
+                    <span>Вопрос: 2</span> Тут должен быть текст вопроса?
+                </div>
+                <div class="test-question-options">
+                    <div class="test-question-option">
+                        <input type="radio" id="answer-one" name="answer">
+                        <label for="answer-one">Вариант ответа 1</label>
+                    </div>
+                    <div class="test-question-option">
+                        <input type="radio" id="answer-second" name="answer">
+                        <label for="answer-second">Вариант ответа 2</label>
+                    </div>
+                    <div class="test-question-option">
+                        <input type="radio" id="answer-third" name="answer">
+                        <label for="answer-third">Вариант ответа 3</label>
+                    </div>
+                    <div class="test-question-option">
+                        <input type="radio" id="answer-fourth" name="answer">
+                        <label for="answer-fourth">Вариант ответа 4</label>
+                    </div>
+                </div>
+            </div>
+            <div class="test-actions">
+                <div class="test-previous-action">
+                    <button class="button button-transparent">Назад</button>
+                </div>
+                <div class="test-time">
+                    <div class="test-time-text" >Осталось времени:</div>
+                    <div class="test-time-clock">49</div>
+                </div>
+                <div class="test-next-action">
+                    <button class="button button-transparent">Дальше</button>
+                </div>
+            </div>
+            <div class="pass-question"> 
+                <a href="#">Пропустить вопрос <img src="img/test/min-arrow.png" alt="min-arrow"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">«АйтилогияQuiz» © Все права защищены / 2022</footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

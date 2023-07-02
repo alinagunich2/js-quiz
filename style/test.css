@@ -1,0 +1,71 @@
+.test {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.container {
+}
+.test-pre-title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #DCDCF3;
+}
+.test-progress-bar {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.test-question {
+}
+.test-question-title {
+    font-size: 36px;
+    line-height: 43px;
+    font-family: 'MuseoSansCyrlBold', sans-serif;
+}
+.test-question-title  span{
+    color: #6933DC;
+}
+.test-question-options {
+    margin-top: 58px;
+    min-height: 344px;
+}
+.test-question-option {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.test-question-option label{
+    cursor: pointer;
+}
+.test-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+.test-previous-action {
+}
+.button {
+}
+.button-transparent {
+}
+.test-time {
+    display: flex;
+    align-items: center;
+
+}
+.test-time-text {
+ font-size: 17px;
+ line-height: 20px;
+ color: #6933DC;
+ margin-right: 15px;
+}
+.test-time-clock {
+    background-image: url('../img/test/clock.png');
+    background-size: cover;
+    background-position: center;
+    width: 27px;
+    height: 29px;
+}
+.test-next-action {
+}
+.pass-question {
+}

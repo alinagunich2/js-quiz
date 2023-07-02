@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: url(../fonts/ofont.ru_Museo\ Sans\ Cyrl\ 500.ttf);
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrlBold';
+    src: url(../fonts/ofont.ru_Museo\ Sans\ Cyrl\ 700.ttf);
+}
+a{
+    color: #6933DC;
+}
+
+body{
+    color: #333333;
+    margin: 0px;
+    font-family: 'MuseoSansCyrl', sans-serif;
+}
+
+
+.header {
+    padding: 42px 0px 40px;
+    border-bottom: 1px solid #DCDCF3;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 13px;
+    line-height: 16px;
+      color: #DCDCF3;
+  }
+
+  .button {
+    padding: 14px 35px;
+    background-color: rgba(105, 51, 220, 1);
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(83, 40, 173);
+
+}
+.common-title {
+    font-family: 'MuseoSansCyrlBold', sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    color: #333333;
+}
+.common-title span{
+    color: #6933DC;
+}
