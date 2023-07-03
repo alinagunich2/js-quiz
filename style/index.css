@@ -13,20 +13,14 @@
 .main-content {
     min-width: 588px;
 }
-.main-title{
-    font-family: 'MuseoSansCyrlBold', sans-serif;
-    font-size: 54px;
-    line-height: 65px;
-}
-.main-title span{
-    color: rgba(105, 51, 220, 1);
-}
+
 .main-description {
     margin-top: 40px;
     font-family: 'MuseoSansCyrl', sans-serif;
     font-size: 20px;
     max-width: 486px;
     line-height: 24px;
+    
 }
 .main-button {
     margin-top: 60px;

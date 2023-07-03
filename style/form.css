@@ -8,7 +8,7 @@
     justify-content: space-between;
 }
 .form-content {
-    max-width: 504px;
+    max-width: 600px;
 }
 .form-detalis {
     margin-top: 60px;
@@ -74,7 +74,7 @@ border-left: 5px solid #6933DC;
 .form-button {
     
 }
-.button {
-}
-.form-img {
+.button:disabled {
+    background-color: #e2dfe7;
+    cursor: not-allowed;
 }

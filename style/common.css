@@ -43,10 +43,23 @@ body{
     color: #FFFFFF;
     border: 0;
     cursor: pointer;
+    text-decoration: none;
 }
+a.button{
+    display: inline-block;
+} 
 .button:hover{
     background-color: rgb(83, 40, 173);
 
+}
+.button-transparent {
+    background: transparent;
+    color: #6933DC;
+    border: 1px solid #6933DC;
+}
+.button-transparent:hover {
+    background: #6933DC;
+    color: #FFFFFF;
 }
 .common-title {
     font-family: 'MuseoSansCyrlBold', sans-serif;
@@ -56,4 +69,12 @@ body{
 }
 .common-title span{
     color: #6933DC;
+}
+.big-title{
+    font-family: 'MuseoSansCyrlBold', sans-serif;
+    font-size: 54px;
+    line-height: 65px;
+}
+.big-title span{
+    color: rgba(105, 51, 220, 1);
 }
