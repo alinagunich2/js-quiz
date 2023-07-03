@@ -35,8 +35,8 @@
             })
 
             this.processElement = document.getElementById('process')
-            this.processElement.onchange=function(){
-
+            this.processElement.onclick=function(){
+                that.processForm()
             }
 
             this.agreeElement = document.getElementById('agree');
@@ -57,10 +57,23 @@
         },
         validateForm(){
             const validForm = this.fields.every(itm => itm.valid)
-            if(this.agreeElement.checked && validForm){
+            const isValid = this.agreeElement.checked && validForm
+            if(isValid){
                 this.processElement.removeAttribute('disabled')
             }else{
                 this.processElement.setAttribute('disabled', 'disabled')
+            }
+            return isValid
+        },
+        processForm(){
+            if(this.validateForm()){
+                
+                let paramString = ''
+                this.fields.forEach(itm=>{
+                    paramString += (!paramString ? '?':'&') + itm.name + '=' + itm.element.value
+                })
+
+                location.href='choice.html'+paramString
             }
         }
     };
