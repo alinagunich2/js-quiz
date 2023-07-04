@@ -133,30 +133,30 @@ margin-left: 130px;
     left: 28px;
     top: 10px;
 }
-.test-progress-bar-item.complite:not(:last-child)::before{
+.test-progress-bar-item.complete:not(:last-child)::before{
 background: #6933DC;
 }
-.progress-bar-item-circle {
+.test-progress-bar-item-circle {
     width: 26px;
     height: 26px;
     background: #DCDCF3;
     border-radius: 50%;
 }
-.progress-bar-item-text {
+.test-progress-bar-item-text {
     font-size: 13px;
     line-height: 16px;
     margin-top: 10px;
 }
-.test-progress-bar-item.complite .progress-bar-item-circle 
-.test-progress-bar-item.active .progress-bar-item-circle {
+.test-progress-bar-item.complete .test-progress-bar-item-circle,
+.test-progress-bar-item.actives .test-progress-bar-item-circle{
     background: #6933DC;
 }
 
-.test-progress-bar-item.active::after {
+.test-progress-bar-item.actives::after {
 content: '';
 border-radius: 50%;
 position: absolute;
-z-index: 1;
+z-index: 100;
 width: 14px;
 height: 14px;
 background: #DCDCF3;
