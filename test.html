@@ -41,49 +41,37 @@
                     <div class="progress-bar-item-text">Вопрос 5</div>
                 </div>
             </div>
+
             <div class="test-question">
-                <div class="test-question-title">
-                    <span>Вопрос: 2</span> Тут должен быть текст вопроса?
+                <div class="test-question-title" id="title">
+
                 </div>
-                <div class="test-question-options">
-                    <div class="test-question-option">
-                        <input type="radio" id="answer-one" name="answer">
-                        <label for="answer-one">Вариант ответа 1</label>
-                    </div>
-                    <div class="test-question-option">
-                        <input type="radio" id="answer-second" name="answer">
-                        <label for="answer-second">Вариант ответа 2</label>
-                    </div>
-                    <div class="test-question-option">
-                        <input type="radio" id="answer-third" name="answer">
-                        <label for="answer-third">Вариант ответа 3</label>
-                    </div>
-                    <div class="test-question-option">
-                        <input type="radio" id="answer-fourth" name="answer">
-                        <label for="answer-fourth">Вариант ответа 4</label>
-                    </div>
+                <div class="test-question-options" id="options">
+                    
                 </div>
             </div>
+
             <div class="test-actions">
                 <div class="test-previous-action">
-                    <button class="button button-transparent">Назад</button>
+                    <button class="button button-transparent" id="prev" disabled>Назад</button>
                 </div>
                 <div class="test-time">
                     <div class="test-time-text" >Осталось времени:</div>
                     <div class="test-time-clock">49</div>
                 </div>
                 <div class="test-next-action">
-                    <button class="button button-transparent">Дальше</button>
+                    <button class="button button-transparent" id="next" disabled>Дальше</button>
                 </div>
             </div>
             <div class="pass-question"> 
-                <a href="#">Пропустить вопрос <img src="img/test/min-arrow.png" alt="min-arrow"></a>
+                <a href="javascript:void(0)" id="pass">Пропустить вопрос <img src="img/test/min-arrow.png" alt="min-arrow"></a>
             </div>
         </div>
     </section>
 
     <footer class="footer">«АйтилогияQuiz» © Все права защищены / 2022</footer>
 
-    <script src="script/script.js"></script>
+    <script src="script/common.js"></script>
+    <script src="script/test.js"></script>
 </body>
 </html>

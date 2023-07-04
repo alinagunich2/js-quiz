@@ -61,6 +61,12 @@ a.button{
     background: #6933DC;
     color: #FFFFFF;
 }
+.button-transparent:disabled{
+    background: transparent;
+    color: #e2dfe7;
+    border: 1px solid #e2dfe7;
+    cursor: no-drop;
+}
 .common-title {
     font-family: 'MuseoSansCyrlBold', sans-serif;
     font-size: 48px;
