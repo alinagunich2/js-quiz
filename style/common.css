@@ -84,3 +84,32 @@ a.button{
 .big-title span{
     color: rgba(105, 51, 220, 1);
 }
+
+.test-question {
+}
+.test-question-title {
+    font-size: 36px;
+    line-height: 43px;
+    font-family: 'MuseoSansCyrlBold', sans-serif;
+}
+.test-question-title  span{
+    color: #6933DC;
+}
+.test-question-options {
+    margin-top: 58px;
+    min-height: 344px;
+}
+.test-question-option {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.test-question-option label{
+    cursor: pointer;
+}
+.test-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}

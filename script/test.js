@@ -212,6 +212,12 @@
                 results: this.userResult
             }));
 
+            const userAnswers = this.userResult.map(itm=>{
+                return itm.chosenAnswerId
+            })
+
+          
+
             if(xhr.status===200&&xhr.responseText){
                 let result = null
 
@@ -221,9 +227,9 @@
                     location.href='index.html'
                 }
 
-                if(result){
-                   
-                    location.href = 'result.html?score='+result.score+ '&total='+result.total
+                if(result){   
+                    location.href = 'result.html?score=' + result.score + "&total=" + result.total  +"&name=" + name +
+                    "&lastName=" + lastName + '&id=' + id + "&result=" + userAnswers;
                 }
             }else{
                 location.href='index.html'

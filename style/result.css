@@ -32,5 +32,6 @@
     font-family: 'MuseoSansCyrlBold', sans-serif;
     text-align: center;
     color: #FFFFFF;
-
+    cursor: pointer;
 }
+
