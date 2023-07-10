@@ -1,16 +1,16 @@
-(function(){
-    const Test = {
-        progressBarElement:null,
-        nextButtonElement:null,
-        passButtonElement: null,
-        prevButtonElement:null,
-        questionTitleElement: null,
-        optionsElement: null,
-        quiz:null,
-        currentOuestionIndex:1,
-        userResult: [],
-        
-        init(){
+
+ export   class Test {
+        constructor(){
+            this.progressBarElement=null;
+            this.nextButtonElement=null;
+            this.passButtonElement=null;
+            this.prevButtonElement=null;
+            this.questionTitleElement=null;
+            this.optionsElement=null;
+            this.quiz=null;
+            this.currentOuestionIndex=1;
+            this.userResult= [];
+
             checkUserData()
             const url = new URL(location.href)
             const testId = url.searchParams.get('id')
@@ -32,8 +32,8 @@
             }else{
                 location.href='index.html'
             }
-        },
-       
+        }
+        
         startQuiz(){
             this.progressBarElement = document.getElementById('progress-bar')
 
@@ -67,7 +67,7 @@
                 }
             }.bind(this),1000)
 
-        },
+        }
         prepareProgressBar(){
 
           for(let i =0; i<this.quiz.questions.length;i++){
@@ -87,7 +87,7 @@
 
           this.progressBarElement.appendChild(itemElement)
           }
-        },
+        }
         showQuestion(){
             const activeQuestion = this.quiz.questions[this.currentOuestionIndex-1]
 
@@ -140,10 +140,10 @@
             if(this.currentOuestionIndex>1){
                 this.prevButtonElement.removeAttribute('disabled')
             }
-        },
+        }
         chooseAnswer(){
             this.nextButtonElement.removeAttribute('disabled')
-        },
+        }
         move(action){
             const activeQuestion = this.quiz.questions[this.currentOuestionIndex-1]
             const chosenAnswer =  Array.from(document.getElementsByClassName('option-answer')).find(element=>{
@@ -194,7 +194,7 @@
             })
 
             this.showQuestion()
-        },
+        }
         complete(){
             const url = new URL(location.href)
             const id = url.searchParams.get('id')
@@ -237,5 +237,6 @@
 
         }
     }
-    Test.init()
-})()
+   
+
+

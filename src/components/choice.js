@@ -1,8 +1,8 @@
-(function(){
-    const Choice = {
-        quizzes:[],
-        init(){
-            checkUserData ()
+export class Choice {
+
+    constructor(){
+        this.quizzes=[],
+        checkUserData ()
 
             const xhr = new XMLHttpRequest()
             xhr.open('GET', 'https://testologia.site/get-quizzes', false)
@@ -18,7 +18,10 @@
             }else{
                 location.href = 'index.html'
             }
-        },
+    }
+
+        
+
         processQuizzes(){
             const choiceOptionsElement = document.getElementById('choice-options')
 
@@ -51,15 +54,15 @@
                 })
 
             }
-        },
+        }
+
         chooseQuiz(element){
             const dataId = element.getAttribute('data-id')
             if(dataId){
                 location.href='test.html'+location.search+'&id='+dataId
             }
-        },
+        }
 
     }
 
-    Choice.init()
-})()
+   
